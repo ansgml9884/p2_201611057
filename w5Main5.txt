@@ -1,0 +1,18 @@
+﻿@startuml
+title Grade
+start
+  :get user input marks;
+if (90<=marks <=100)
+  :grade=A;
+elseif(80<=marks<90)
+  :grade=B;
+elseif(70<=marks<80)
+  :grade=C;
+elseif(60<=marks<70)
+  :grade=D;
+else
+  :grade=F; 
+endif
+:print grade;
+stop
+@enduml
