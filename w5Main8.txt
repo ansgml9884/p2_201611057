@@ -1,0 +1,19 @@
+start
+
+:bmi = weight / (height * height);
+
+if (bmi<=18.5)
+ :underweight;
+elseif(18.5<bmi<=23)
+ :normal;
+elseif(23<bmi<=25)
+ :overweight;
+elseif(25<bmi<=30)
+ :obesity;
+elseif(30<bmi<=35)
+ :very obese;
+else(35<bmi)
+ :extremely obese;
+endif
+
+stop
