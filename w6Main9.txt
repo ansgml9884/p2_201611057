@@ -1,0 +1,12 @@
+@startuml
+title Multiples of 3 and 5
+start
+repeat
+if (i%3==0 or i%5==0)
+  :add i to sum; 
+else
+  :do not add i to sum;
+endif
+repeat while(0<i<1000)
+:print sum;
+@enduml
