@@ -1,12 +1,11 @@
 @startuml
-title Multiples of 3 and 5
+title Check leap year
 start
-repeat
-if (i%3==0 or i%5==0)
-  :add i to sum; 
-else
-  :do not add i to sum;
+:user input year;
+if((year%4 == 0) and (year%100!=0 or year%400==0)) then (yes)
+:print leap year;
+else (no)
+:print Not leap year;
 endif
-repeat while(0<i<1000)
-:print sum;
+stop
 @enduml
